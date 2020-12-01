@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+}
+
+.insta{
+    color: rgb(255, 255, 255);
+    font-family: 'Cookie', cursive;
+    font-size: 40px;
+    position: relative;
+    line-height: 140%;
+}
+
+.call{
+    color: rgb(0, 0, 0);
+    font-family: 'Cookie', cursive;
+}
+
+#topoInstaCall{
+    -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+font-size:1.2em;
+background:rgba(30, 159, 219, 0.5);
+background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+    background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+        background-image: -o-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+            background-image: -ms-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                background-image: linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+
+position: relative;
+top: 0;
+left: 0;
+right: 0;
+height: 55px;
+}
+
+#fundoCinza{
+    background-color: rgb(206, 206, 206);
+}
+
+.tabelaPrincipal{
+    margin: 20px auto;
+    text-align: right;
+    
+}
+
+.centralizarTudo{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.botoes{
+    width: 80px;
+}
+
+.botao{
+    width: 90px;
+    border-radius: 12px;
+    border: 1px solid lightgrey;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; 
+}
+
+
+.botao:hover{
+    color: white;
+    -moz-transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+        -o-transition: all 1.5s ease;
+            transition: all 1.5s ease;
+    background:rgba(30, 159, 219, 0.5);
+        background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+            background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                background-image: -o-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                    background-image: -ms-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                        background-image: linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+    
+}
+
+.centralizarTudo{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.mudarPagina{
+    text-decoration: none;
+    color: black;
+}
+
+.mudarPagina:hover{
+    color: white;
+}

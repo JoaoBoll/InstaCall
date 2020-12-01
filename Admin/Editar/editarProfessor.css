@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+}
+
+#topoInstaCall{
+    -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+font-size:1.2em;
+background:rgba(30, 159, 219, 0.5);
+background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+    background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+        background-image: -o-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+            background-image: -ms-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                background-image: linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+
+position: relative;
+top: 0;
+left: 0;
+right: 0;
+height: 55px;
+}
+
+.insta{
+    color: rgb(255, 255, 255);
+    font-family: 'Cookie', cursive;
+    font-size: 40px;
+    position: relative;
+    line-height: 60px;
+}
+
+.call{
+    color: rgb(0, 0, 0);
+    font-family: 'Cookie', cursive;
+}
+ 
+#fundoCinza{
+    background-color: rgb(240, 240, 240);
+}
+
+.tabelaPrincipal{
+    margin: 20px auto;
+    text-align: right;
+    
+}
+
+.centralizarTudo{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.botao{
+    width: 90px;
+    border-radius: 12px;
+    border: 1px solid lightgrey;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; 
+}
+
+.botao2{
+    width: 130px;
+    border-radius: 12px;
+    border: 1px solid lightgrey;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; 
+}
+
+.botao:hover, .botao2:hover{
+    color: white;
+    -moz-transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+        -o-transition: all 1.5s ease;
+            transition: all 1.5s ease;
+    background:rgba(30, 159, 219, 0.5);
+        background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+            background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                background-image: -o-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                    background-image: -ms-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                        background-image: linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+    
+}
+
+.centralizarTudo{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.mudarPagina{
+    text-decoration: none;
+    color: black;
+}
+
+.mudarPagina:hover{
+    color: white;
+}
+/*
+Modal Professor
+*/
+
+.modalProfessor{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.listarProfessorModalBox{
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid;
+    background-color: white;
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -320px;
+    color: rgb(3, 3, 3);
+    -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+                background:rgb(30, 160, 219);
+                background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219), rgb(255, 255, 255));
+                    background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219), rgb(142, 56, 253));
+                        background-image: -o-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+                            background-image: -ms-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+                                background-image: linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+}
+
+.fecharProfessor{
+    background-color: rgba(255, 255, 255, 0.623);
+    padding: 5px 10px;
+    border: 2px solid rgba(41, 41, 41);
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    border-radius: 7px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fecharProfessor:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+
+.fundoBrancoProfessor{
+    background-color: white;
+    height: 560px;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.tableListarProfessor{
+    background-color: white;
+}
+
+td{
+    font-size: 17px;
+    text-align: center;
+}
+
+.overflow{
+    height: 500px;
+    overflow: scroll;
+}
+
+.pesquisarProfessor{
+    font-size: 15px;
+    width: 400px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#direita{
+    text-align: right;
+    font-size: 16px;
+}
+
+/*
+Modal Turm
+*/
+
+.modalTurma{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.listarTurmaModalBox{
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid;
+    background-color: white;
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -320px;
+    color: rgb(3, 3, 3);
+    -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+                background:rgb(30, 160, 219);
+                background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219), rgb(255, 255, 255));
+                    background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219), rgb(142, 56, 253));
+                        background-image: -o-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+                            background-image: -ms-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+                                background-image: linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+}
+
+.fecharTurma{
+    background-color: rgba(255, 255, 255, 0.623);
+    padding: 5px 10px;
+    border: 2px solid rgba(41, 41, 41);
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    border-radius: 7px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fecharTurma:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+
+.fundoBrancoTurma{
+    background-color: white;
+    height: 560px;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.tableListarTurma{
+    background-color: white;
+}
+
+td{
+    font-size: 17px;
+    text-align: center;
+}
+
+.overflow{
+    height: 500px;
+    overflow: scroll;
+}
+
+.pesquisarTurma{
+    font-size: 15px;
+    width: 400px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#direita{
+    text-align: right;
+    font-size: 16px;
+}

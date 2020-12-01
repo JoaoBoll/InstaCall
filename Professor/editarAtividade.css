@@ -1,0 +1,122 @@
+#topoInstaCall{
+    -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+font-size:1.2em;
+background:rgb(30, 160, 219);
+background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219), rgb(255, 255, 255));
+    background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219), rgb(142, 56, 253));
+        background-image: -o-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+            background-image: -ms-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+                background-image: linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 55px;
+}
+
+.insta{
+    color: rgb(255, 255, 255);
+    font-family: 'Cookie', cursive;
+    font-size: 200%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.call{
+    color: rgb(0, 0, 0);
+    font-family: 'Cookie', cursive;
+}
+
+#fundoCinza{
+    background-color: rgb(240, 240, 240);
+    margin-top: 60px;
+}
+.logoTabela{
+    width: 200px;
+    position: fixed;
+}
+
+.fonteAddAtividade{
+    font-size: 45px;
+    position: relative;
+}
+
+.margem1{
+    position: relative;
+    top: 50px;
+}
+
+.margem2{
+    position: relative;
+    top: 60px;
+}
+.descricao{
+    width: 400px;
+    height: 160px;
+}
+
+.botao{
+    width: 160px;
+    border-radius: 12px;
+    border: 1px solid lightgrey;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    font-size: 16px;
+    position: relative;
+}
+
+.nomeprof, .turma, .nomeCurso, .turno, .nomeatividade{
+    width: 400px;
+}
+
+.botao:hover{
+    color: white;
+    -moz-transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+        -o-transition: all 1.5s ease;
+            transition: all 1.5s ease;
+    background:rgba(30, 159, 219, 0.5);
+        background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+            background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                background-image: -o-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                    background-image: -ms-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                        background-image: linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+}
+
+.botao2{
+    width: 100px;
+    border-radius: 12px;
+    border: 1px solid lightgrey;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    font-size: 16px;
+    position: relative;
+}
+
+.botao2:hover{
+    color: white;
+    -moz-transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+        -o-transition: all 1.5s ease;
+            transition: all 1.5s ease;
+    background:rgba(30, 159, 219, 0.5);
+        background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+            background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                background-image: -o-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                    background-image: -ms-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+                        background-image: linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
+}
+
+.dataFinal{
+    width: 100px;
+}
+
+#direita{
+    text-align: right;
+    font-size: 16px;
+}
