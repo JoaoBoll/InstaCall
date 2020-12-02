@@ -42,7 +42,7 @@
                     <br>
                     <div class="inputs">
                         <form method="POST"></form>
-                            <label for="">Login: </label><input id="loginMenu" class="inputsLogin" placeholder="Login">
+                            <label for="">Login:  </label><input id="loginMenu" class="inputsLogin" placeholder="Login">
                             <br>
                             <br>
                             <label for="">Senha: </label><input id="senhaMenu" class="inputsLogin" type="password" placeholder="Senha">

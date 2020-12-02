@@ -36,7 +36,7 @@
             <input type="button" class="botao" onclick="reabrirChamada()" value="Reabrir Chamada">
             <br>
             <br>
-            <a href="editarChamada.php"><input type="button" class="botao" value="Editar Presença"></a>
+            <a href="mostrarPresenca.php"><input type="button" class="botao" value="Presenças"></a>
             <br>
             <br>
             <a href="menu.php"><input type="button" class="botao" value="Voltar"></a>

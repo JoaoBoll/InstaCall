@@ -3,6 +3,9 @@
 require_once "../conexao.php";
 
 try {
+
+    //fazer select dos alunos da turma, para cada aluno criar uma string de SQL com vários insert.
+
     $sql = ("INSERT INTO testechamada (idturma, dia, teste) VALUES (:idTurma, :dia, 1)");
     $query = $conn->prepare($sql);
     

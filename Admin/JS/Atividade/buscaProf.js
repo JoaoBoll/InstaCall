@@ -22,6 +22,9 @@ $(document).ready(function(){
                     window.alert("Professor não encontrado")
                     window.location.href="../index.php";
                 }
+            }, error: function(result) {
+                window.alert("Falha nna autenticação.")
+                window.location.href="../index.php";
             }
         })
     } else {

@@ -125,16 +125,6 @@ td {
     text-align: right;
 }
 
-.emDia p{
-    font-weight: bolder;
-    color: green;
-}
-
-.emAtraso p{
-    font-weight: bolder;
-    color: red;
-}
-
 .tabelaProf{
     background-color: white;
     position: absolute;

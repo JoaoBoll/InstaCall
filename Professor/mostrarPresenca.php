@@ -1,17 +1,14 @@
 <html>
   <head>
-    <link href="atividadesEncerradas.css" rel="stylesheet">
+    <link href="mostrarPresenca.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <script src="../Admin/JS/mask.js"></script>
-    <script src="../Admin/JS/Atividade/atividade.js"></script>
-    <script src="../Admin/JS/AtividadeEncerrada/buscaProfAtividade.js"></script>
-
-
-    <title>Atividades-Professor-UniSociesc</title>
+    <script type="text/javascript" src="../Admin/JS/mask.js"></script>
+    <script type="text/javascript" src="../Admin/JS/chamada/listarPresencaAlunos.js"></script>
+        <title>Atividades-Professor-UniSociesc</title>
         
     </head>
     <header>
@@ -23,38 +20,42 @@
         <div>
             <img class="logoSociesc" src="../Imagens/Logo.png" alt="">
             <br>
-            <font class="fonteAtividade">Atividades:</font>
+            <font class="fonteAtividade">Frequência:</font>
             <br>
             <br>
-            <a href="atividades.php"><input type="button" class="botao botaoCriarAtividade" value="Voltar"></a>
             <br>
-            <table style="display: none"  class="tabelaProf">
-                <tr>
-                    <td id="direita">ID:</td>
-                    <td><input type="text" disabled id="idProf" class="idProf"></td>
-                </tr>
-                <tr>
-                    <td id="direita">Professor: </td>
-                    <td><input type="text" disabled id="nomeProf" class="nomeProf"></td>
-                </tr>
-                <tr>
-                    <td id="direita">Turma: </td>
-                    <td><input type="text" disabled id="turma" class="turma"></td>
-                </tr>
-                <tr>
-                    <td id="direita">Curso: </td>
-                    <td><input type="text" disabled id="nomeCurso" class="nomeCurso"></td>
-                </tr>
-                <tr>
-                    <td id="direita">Turno: </td>
-                    <td><input type="text" disabled id="turno" class="nomeCurso"></td>
-                </tr>
-            </table>
+            <input type="text" id="data" placeholder="Ex: 10/10/2050" class="tamanho">
+            <br>
+            <br>
+            <a href="editarChamada.php"><input type="button" class="botao" value="Editar Presença"></a>
+            <br>
+            <br>
+            <a href="menu.php"><input type="button" class="botao" value="Voltar"></a>
         </div>
-<!--  -->
-
+        <table style="display: none;" class="tabelaProf">
+                        <tr>
+                            <td id="direita">ID:</td>
+                            <td><input type="text" disabled id="idProf" class="idProf"></td>
+                        </tr>
+                        <tr>
+                            <td id="direita">Professor: </td>
+                            <td><input type="text" disabled id="nomeProf" class="nomeProf"></td>
+                        </tr>
+                        <tr>
+                            <td id="direita">Turma: </td>
+                            <td><input type="text" disabled id="turmaProf" class="turma"></td>
+                        </tr>
+                        <tr>
+                            <td id="direita">Curso: </td>
+                            <td><input type="text" disabled id="nomeCurso" class="nomeCurso"></td>
+                        </tr>
+                        <tr>
+                            <td id="direita">Turno: </td>
+                            <td><input type="text" disabled id="turno" class="nomeCurso"></td>
+                        </tr>
+                    </table>
         <div class="borda">
-            <table class="tabelaDentro" id="tabelaDeAtividades" style="border: 1px solid black">
+            <table class="TabelaPresenca" id="TabelaPresenca" style="border: 1px solid black">
                 <!-- <tr>
                     <td>
                         <table class='bordaFora1'>

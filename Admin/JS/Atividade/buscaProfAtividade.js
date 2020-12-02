@@ -1,28 +1,27 @@
 $(document).ready(function(){
-    var testeMatricula = $('#matricula').val();
 
-        jQuery.ajax({
-            type: 'POST',
-            url: '../Conexao/Professor/buscarProfessor.php',
-            datatype: 'json',
-            data: {},
-            success: function (result, textstatus) {
+    jQuery.ajax({
+        type: 'POST',
+        url: '../Conexao/Professor/buscarProfessor.php',
+        datatype: 'json',
+        data: {},
+        success: function (result, textstatus) {
 
-                let resultado = JSON.parse(result);
+            let resultado = JSON.parse(result);
+            
+            if (resultado) {
+                $('#idProf').val(resultado.idProf);
+                $('#nomeProf').val(resultado.nomeProf);
+                $('#nomeCurso').val(resultado.nomeCurso);
+                $('#turma').val(resultado.idTurma);
+                listarAtividades(resultado.idTurma);
                 
-                if (resultado) {
-                    $('#idProf').val(resultado.idProf);
-                    $('#nomeProf').val(resultado.nomeProf);
-                    $('#nomeCurso').val(resultado.nomeCurso);
-                    $('#turma').val(resultado.idTurma);
-                    listarAtividades(resultado.idTurma);
-                    
-                } else if(!resultado) {
-                    window.alert("Professor não encontrado")
-                    window.location.href="../index.php";
-                }
+            } else if(!resultado) {
+                window.alert("Professor não encontrado")
+                window.location.href="../index.php";
             }
-        })
+        }
+    })
 });
 function listarAtividades(idTurma){
     
@@ -37,11 +36,22 @@ function listarAtividades(idTurma){
         success: function (result, textstatus) {
             let dados = JSON.parse(result);
             console.log(dados);
-            dados.forEach(d => criarLinhaInst(d));
+            dados.forEach(d => criarLinhaAtividade(d));
 
             //Como forEach trabalha? funcoinamento etc...
         }
     })
+}
+
+
+
+function criarLinhaAtividade(dados){
+    var table = document.getElementById("tabelaDeAtividades");
+    var row = table.insertRow(-1);
+    var cell1 = row.insertCell(0);
+    
+    cell1.innerHTML = retornaLinhaTabela(dados.idAtividade, dados.descricaoAtividade,dados.nomeProf, dados.nomeCurso, dados.dataLimite);
+    
 }
 
 function retornaLinhaTabela(_id, _desc,_nomeProf, _curso, _data){
@@ -57,12 +67,3 @@ function retornaLinhaTabela(_id, _desc,_nomeProf, _curso, _data){
     return html;
 
 }
-
-function criarLinhaInst(dados){
-    var table = document.getElementById("tabelaDeAtividades");
-    var row = table.insertRow(-1);
-    var cell1 = row.insertCell(0);
-    
-    cell1.innerHTML = retornaLinhaTabela(dados.idAtividade, dados.descricaoAtividade,dados.nomeProf, dados.nomeCurso, dados.dataLimite);
-    
-  }

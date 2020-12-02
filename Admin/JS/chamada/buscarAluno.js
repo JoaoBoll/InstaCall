@@ -69,39 +69,54 @@ function criarLinhaInst(dados){
 function confirmarPresenca() {
 
     if ($("#data").val() != "" && $('#idAluno').val() != "" && $('#Turma').val() != "") {
+        
         jQuery.ajax({
             type: 'POST',
-            url: '../Conexao/chamada/contarRegistro.php',
+            url: '../Conexao/chamada/countChamada.php',
             datatype: 'json',
-            data: {idTurma:  $('#idAluno').val(), idTurma: $('#Turma').val(), data: $("#data").val()},
+            data: {idTurma: $('#Turma').val(), data: $("#data").val()},
             success: function (result, textstatus) {
-
+                console.log(result);
                 let resultado = JSON.parse(result);
-                if (resultado.total == 0) {
+                if (resultado.total == 1) {
+                    
                     jQuery.ajax({
                         type: 'POST',
-                        url: '../Conexao/chamada/confirmarPresenca.php',
+                        url: '../Conexao/chamada/contarRegistro.php',
                         datatype: 'json',
-                        data: {idAluno:  $('#idAluno').val(), idTurma: $('#Turma').val(), data: $("#data").val()},
+                        data: {idTurma:  $('#idAluno').val(), idTurma: $('#Turma').val(), data: $("#data").val()},
                         success: function (result, textstatus) {
             
                             let resultado = JSON.parse(result);
-                            if (resultado) {
-                                window.alert("Registro feito com sucesso!")
-                            } else if(!resultado) {
-                                window.alert("Falha ao registrar presença")
+                            if (resultado.total == 0) {
+                                jQuery.ajax({
+                                    type: 'POST',
+                                    url: '../Conexao/chamada/confirmarPresenca.php',
+                                    datatype: 'json',
+                                    data: {idAluno:  $('#idAluno').val(), idTurma: $('#Turma').val(), data: $("#data").val()},
+                                    success: function (result, textstatus) {
+                                        console.log(result);
+                                        let resultado = JSON.parse(result);
+                                        if (resultado) {
+                                            window.alert("Registro feito com sucesso!")
+                                        } else if(!resultado) {
+                                            window.alert("Falha ao registrar presença")
+                                        }
+                                    }
+                                })
+                            } else {
+                                window.alert("Presença já confirmada")
                                 window.location.href="../index.php";
                             }
                         }
                     })
-                } else {
-                    window.alert("Presença já confirmada")
+
+                } else if(resultado.total != 1) {
+                    window.alert("Falha ao registrar presença\nChamada não existe.")
                     window.location.href="../index.php";
                 }
             }
         })
-        
-        
     } else {
         window.alert("Campos vazios");
     }
