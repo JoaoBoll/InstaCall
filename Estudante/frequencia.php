@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="../Admin/JS/mask.js"></script>
     <script type="text/javascript" src="../Admin/JS/chamada/buscarFrequencia.js"></script>
-        <title>Atividades-Professor-UniSociesc</title>
+        <title>Atividades-Estudante-UniSociesc</title>
         
     </head>
     <header>
@@ -26,23 +26,23 @@
             <br>
             <a href="menu.php"><input type="button" class="botao" value="Voltar"></a>
         </div>
-        <table >
-                <tr>
-                    <td id="direita">Matrícula:</td>
-                    <td><input type="text" disabled id="idAluno"></td>
-                <tr>
-                    <td id="direita">Aluno:</td>
-                    <td><input type="text" id="nomeAluno" disabled></td>
-                </tr>
-                <tr>
-                    <td id="direita">Turma</td>
-                    <td><input type="text" id="Turma" disabled></td>
-                </tr>
-                <tr>
-                    <td id="direita">Curso:</td>
-                    <td><input type="text" id="nomeCurso" disabled></td>
-                </tr>
-            </table>
+        <table style="display: none;">
+            <tr>
+                <td id="direita">Matrícula:</td>
+                <td><input type="text" disabled id="idAluno"></td>
+            <tr>
+                <td id="direita">Aluno:</td>
+                <td><input type="text" id="nomeAluno" disabled></td>
+            </tr>
+            <tr>
+                <td id="direita">Turma</td>
+                <td><input type="text" id="Turma" disabled></td>
+            </tr>
+            <tr>
+                <td id="direita">Curso:</td>
+                <td><input type="text" id="nomeCurso" disabled></td>
+            </tr>
+        </table>
         <div class="borda">
             <table class="tabelaProfChamada" id="tabelaFrequencia" style="border: 1px solid black">
                 <!-- <tr>

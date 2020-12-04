@@ -1,7 +1,4 @@
 $(document).ready(function(){
-    var testeMatricula = $('#matricula').val();
-
-    if (testeMatricula != "") {
         jQuery.ajax({
             type: 'POST',
             url: '../Conexao/Professor/buscarProfessor.php',
@@ -23,8 +20,4 @@ $(document).ready(function(){
                 }
             }
         })
-    } else {
-        window.alert("Campo ID vazio.")
-        window.location.href="../index.php";
-    }  
 });

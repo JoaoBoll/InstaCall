@@ -31,9 +31,9 @@ function listarpresenca(){
         data: {idTurma: $("#turmaProf").val()},
     
         success: function (result, textstatus) {
-            console.log(result);
+            
             let dados = JSON.parse(result);
-        
+            console.log(dados);
             dados.forEach(d => criarLinhaInst(d));
 
             //Como forEach trabalha? funcoinamento etc...
@@ -65,6 +65,6 @@ function criarLinhaInst(dados){
     var row = table.insertRow(-1);
     var cell1 = row.insertCell(0);
     
-    cell1.innerHTML = retornaLinhaTabela(dados.idTurma,dados.diaChamada,dados.presenca,dados.nomeAluno);
+    cell1.innerHTML = retornaLinhaTabela(dados.idAluno,dados.diaChamada,dados.presenca,dados.nomeAluno);
     
   }

@@ -27,10 +27,10 @@
             <input type="text" id="data" placeholder="Ex: 10/10/2050" class="tamanho">
             <br>
             <br>
-            <a href="editarChamada.php"><input type="button" class="botao" value="Editar Presença"></a>
+            <a href="editarPresenca.php"><input type="button" class="botao" value="Editar Presença"></a>
             <br>
             <br>
-            <a href="menu.php"><input type="button" class="botao" value="Voltar"></a>
+            <a href="frequencia.php"><input type="button" class="botao" value="Voltar"></a>
         </div>
         <table style="display: none;" class="tabelaProf">
                         <tr>

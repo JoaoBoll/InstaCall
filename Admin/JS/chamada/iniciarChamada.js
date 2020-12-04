@@ -153,3 +153,44 @@ function retornaFalta(id, datas, turma){
     })
 
 }
+
+function editarPresenca() {
+
+    if ($("#data").val() != "" && $("#turma").val() != "" && $("#matricula").val() != "") {
+        jQuery.ajax({
+            type: 'POST',
+            url: '../Conexao/Chamada/countChamada.php',
+            datatype: 'json',
+            data: {idTurma: $("#turma").val(), data: $("#data").val()},
+            success: function (result, textstatus) {
+
+                let resultado = JSON.parse(result);
+
+                if (resultado.total == 1) {
+                    jQuery.ajax({
+                        type: 'POST',
+                        url: '../Conexao/Chamada/arrumarPresenca.php',
+                        datatype: 'json',
+                        data: {idTurma: $("#turma").val(), dia: $("#data").val(), matricula: $('#matricula').val()},
+                        success: function (result, textstatus) {
+                            console.log(result);
+                            if (result) {
+                                window.alert("Presença ajustada com sucesso!")
+                                location.reload();
+                            } else {
+                                window.alert("Falha ao ajustar presença.\nSe o problema persistir, contate um administrador")
+                            }
+                        }
+                    })
+
+                } else {
+                    window.alert("Chamada inexistente")
+                }
+            }
+        })
+
+    } else {
+        window.alert("Campos vazios");
+    }
+
+}

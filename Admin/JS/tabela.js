@@ -530,10 +530,6 @@ function limparFiltroAlunoChamada(){
 }
 
 /*
-listar Aluno Nota
-*/
-
-/*
 modalAluno
 */
 

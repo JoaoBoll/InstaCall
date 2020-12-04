@@ -2,7 +2,7 @@
 
 require_once "../conexao.php";
 
-$sql = ("SELECT n.idAtividade, n.nota,a.descricaoAtividade, p.nomeProf, c.nomeCurso, a.nomeAtividade FROM notas n, professor p, turma t, atividade a, curso c WHERE n.idAluno = :idAluno AND n.idTurma = :idTurma AND t.idCurso = c.idCurso AND n.idTurma = t.idTurma");
+$sql = ("SELECT n.idAtividade, n.nota, p.nomeProf, a.nomeAtividade, a.descricaoAtividade FROM notas AS n INNER JOIN atividade AS a ON a.idAtividade = n.idAtividade INNER JOIN professor AS p ON p.idTurma = a.idTurma WHERE n.idAluno = :idAluno AND n.idTurma = :idTurma");
 $query = $conn->prepare($sql);
 
 $query->bindParam(':idAluno',$_GET['idAluno']);

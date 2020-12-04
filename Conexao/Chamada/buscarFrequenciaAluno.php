@@ -2,7 +2,7 @@
 
 require_once "../conexao.php";
 
-$sql = ("SELECT c.idTurma, a.nomeAluno, c.diaChamada, c.presenca, cur.nomeCurso FROM aluno a,chamada c, curso cur, turma t, professor p WHERE t.idTurma = c.idTurma AND t.idCurso = cur.idCurso AND p.idTurma = t.idTurma AND a.idTurma = c.idTurma AND c.idAluno = :idAluno AND c.idTurma = :idTurma");
+$sql = ("SELECT c.diaChamada, c.presenca, cur.nomeCurso FROM chamada c, curso cur, turma t WHERE c.idTurma = :idTurma AND c.idAluno = :idAluno AND t.idCurso = cur.idCurso AND c.idTurma = t.idTurma;");
 
 $query = $conn->prepare($sql);
 

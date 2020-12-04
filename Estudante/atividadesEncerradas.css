@@ -79,7 +79,6 @@ height: 55px;
                 background-image: -o-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
                     background-image: -ms-linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
                         background-image: linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
-    
 }
 
 .borda{
@@ -92,8 +91,9 @@ height: 55px;
     overflow: scroll;
 }
 
-.tabela{
-    margin-top: 30px;
+td {
+    border: 1px solid black;
+    border-radius: 12px;
 }
 
 .tabelaDentro{
@@ -115,103 +115,70 @@ height: 55px;
                         background-image: linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
 }
 
-.bordaFora1{
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
-    border-bottom: none;
-    border-right: none;
-    background-color: rgb(240, 240, 240);
-}
-
-
-.bordaFora2{
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
-    border-bottom: none;
-    border-right: none;
-    background-color: rgb(240, 240, 240);
-}
-
-
-.bordaFora3{
-    width: 150px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
-    border-top: none;
-    border-left: none;
-    background-color: rgb(240, 240, 240);
-}
-
-.tabelaId{
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    width: 100px;
-    font-size: 25px;
-    border-radius: 10px;
-    background-color: rgb(240, 240, 240);
-}
-
-.tabelaDesc{
-    width: 800px;
-    font-size: 20px;
-    width: 100%;
-    border-style: solid;
-    border-radius: 10px;
-    border-top: none;
-    border-left: none;
-    background-color: rgb(240, 240, 240);
-}
-
-.tabelaData{
-    border-style: solid;
-    border-right: none;
-    border-bottom: none;
-    border-radius: 10px;
-    width: 200px;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgb(240, 240, 240);
-}
-
-.bordaFora4{
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
-    border-bottom: none;
-    border-right: none;
-    background-color: rgb(240, 240, 240);
-}
-
-.tabelaNome{
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    width: 250px;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: rgb(240, 240, 240);
-}
-
-.tabelaProf{
-    position: relative;
-    top: 60px;
-    left: 30px;
-}
-
-#direita{
-    text-align: right;
-}
-
-.emDia p{
-    font-weight: bolder;
-    color: green;
-}
-
 .emAtraso p{
     font-weight: bolder;
     color: red;
+}
+
+.tabelaProf{
+    background-color: white;
+    position: absolute;
+    border-radius: 12px;
+    left: 110px;
+    top: 1%;
+    border: 1px solid black;
+    text-align: center;
+    width: 300px;
+}
+
+.tabelaNome{
+    float: left;
+    border: 1px solid black;
+    border-radius: 12px;
+    position: relative;
+    background-color: white;
+    top: 100%;
+    text-align: center;
+    margin-top: 20px;
+    width: 300px;
+    left: 110px;
+}
+
+.tabelaDesc{
+    padding: 3px;
+    word-break: break-all;
+    width: 850px;
+    position: relative;
+    border-radius: 12px;
+    top: 10px;
+    margin-left: 110px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.tabelaData{
+    float: right;
+    border: 1px solid black;
+    border-radius: 12px;
+    position: relative;
+    background-color: white;
+    top: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.tabelaId{
+    position: relative;
+    width: 100px;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    top: 1%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.titulo{
+    font-weight: bold;
 }

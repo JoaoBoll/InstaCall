@@ -10,7 +10,7 @@
     <script src="../Admin/JS/Notas/buscarAluno.js"></script>
 
 
-    <title>Atividades-Aluno-UniSociesc</title>
+    <title>Atividades-Estudante-UniSociesc</title>
         
     </head>
     <header>

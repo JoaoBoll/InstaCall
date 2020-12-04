@@ -10,7 +10,7 @@
     <script src="../Admin/JS/AtividadeEncerrada/buscarAtividades.js"></script>
 
 
-    <title>Atividades-Aluno-UniSociesc</title>
+    <title>Atividades-Estudante-UniSociesc</title>
         
     </head>
     <header>

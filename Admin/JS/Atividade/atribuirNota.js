@@ -31,7 +31,7 @@ function atribuirNota() {
                             data: {turma: $('#turma').val(),idAluno: $('#matricula').val(),idAtividade: $('#idAtividade').val(),turmaProf: $('#turmaProf').val(), nota: $('#nota').val()},
                             success: function (result, textstatus) {
                                 window.alert("Nota atribuída como sucesso!");
-                                window.location.href="atividades.php";     
+                                location.reload();
                             }, error: function(){
                                 window.alert("Falha no registro, se o problema persistir, chame um administrador.")
                             }

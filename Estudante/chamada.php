@@ -10,7 +10,7 @@
     <script type="text/javascript" src="../Admin/JS/Chamada/buscarAluno.js"></script>
     <link rel="stylesheet" href="chamada.css">
 
-        <title>Atividades-Professor-UniSociesc</title>
+        <title>Atividades-Estudante-UniSociesc</title>
         
     </head>
     <header>
