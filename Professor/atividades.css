@@ -35,34 +35,42 @@ height: 55px;
     font-family: 'Cookie', cursive;
 }
 
+.painel{
+    width: 300px;
+    float: left;
+}
+
+.borda{
+    border: 2px solid black;
+    border-radius: 12px;
+    height: 590px;
+    width: 1000px;
+    margin-top: 10px;
+    float: left;
+}
+
 #fundoCinza{
     background-color: rgb(240, 240, 240);
-    
 }
 .logoSociesc{
     width: 160px;
     margin-top: 10px;
-    position: fixed;
 }
 
 .fonteAtividade{
     font-size: 45px;
-    top: 30px;
     font-family: 'Cookie', cursive;
-    position: relative;
-    left: 120px;
+    text-align: center;
+    width: 100%;
 }
 
 .botao{
-    top: 40px;
     width: 170px;
     border-radius: 12px;
     border: 1px solid lightgrey;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     font-size: 17px;
-    position: relative;
-    left: 110px;
     font-weight: 100px;
 }
 
@@ -82,21 +90,7 @@ height: 55px;
     
 }
 
-.borda{
-    border: 2px solid black;
-    border-radius: 12px;
-    height: 590px;
-    width: 1000px;
-    left: 315px;
-    top: 60px;
-    position: fixed;
-    overflow: scroll;
-    margin-top: 10px;
-}
 
-.tabela{
-    margin-top: 30px;
-}
 
 .tabelaDentro{
     width: 100%;
@@ -139,65 +133,119 @@ td {
     color: red;
 }
 
+.tabela{
+    position: relative;
+}
+
+.tabela>div{
+    float: left;
+    margin: 5px;
+    border-radius: 12px;
+}
+
 .tabelaProf{
     background-color: white;
-    position: absolute;
-    border-radius: 12px;
-    left: 110px;
-    top: 1%;
     border: 1px solid black;
     text-align: center;
     width: 300px;
 }
 
 .tabelaNome{
-    float: left;
     border: 1px solid black;
-    border-radius: 12px;
-    position: relative;
     background-color: white;
-    top: 100%;
     text-align: center;
-    margin-top: 20px;
     width: 300px;
-    left: 110px;
 }
 
 .tabelaDesc{
     padding: 3px;
     word-break: break-all;
-    width: 850px;
-    position: relative;
-    border-radius: 12px;
-    top: 10px;
-    margin-left: 110px;
+    width: calc(100% - 17px);
+    margin-right: 10px;
     background-color: white;
     border: 1px solid black;
 }
 
 .tabelaData{
-    float: right;
+    float: right !important;
     border: 1px solid black;
-    border-radius: 12px;
-    position: relative;
     background-color: white;
-    top: 100%;
     text-align: center;
-    margin-top: 20px;
-    padding: 5px;
-    font-weight: bolder;
+    padding: 0 10px;
 }
 
 .tabelaId{
-    position: relative;
     width: 100px;
-    border-radius: 12px;
     background-color: rgb(255, 255, 255);
-    top: 1%;
     border: 1px solid black;
     text-align: center;
 }
 
 .titulo{
     font-weight: bold;
+}
+
+@media screen and (max-width:600px) {
+
+    .painel{
+        width: 100%;
+    }
+
+    #topoInstaCall{
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+        font-size:1.2em;
+        background:rgb(30, 160, 219);
+        background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219), rgb(255, 255, 255));
+            background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219), rgb(142, 56, 253));
+                background-image: -o-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+                    background-image: -ms-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+                        background-image: linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+        width: 900px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 55px;
+    }
+
+    .fonteAtividade{
+        font-size: 70px;
+        left: 75px;
+    }
+    
+    .botao{
+        width: 250px;
+        height: 40px;
+        font-size: 25px;
+        border: 1px solid black;
+        left: 50px;
+    }
+
+    .logoSociesc{
+        width: 200px;
+    }
+
+    .borda{
+        height: 100%;
+        width:350px;
+        padding: 3px;
+    }
+
+    .tabelaData{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    .tabelaProf{
+        width: calc(100% - 15px);
+    }
+
+    .tabelaNome{
+        width: calc(100% - 17px);
+    }
+
 }

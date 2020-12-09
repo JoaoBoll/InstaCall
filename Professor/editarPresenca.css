@@ -227,9 +227,10 @@ td{
 
 /* Resolução "Mobile" */
        
-@media (max-width: 480px) { 
-    .fonteAddAtividade{
-        font-size: 280%;
-    } 
+@media (max-width: 360px) { 
+
+    #abrirAlunoNota{
+        display: none;
+    }
 }
 

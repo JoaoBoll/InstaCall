@@ -89,6 +89,7 @@ label{
     width: 300px;
     height: 25px;
     font-size: 100%;
+    border-radius: 12px;
 }
 
 #button{
@@ -120,67 +121,54 @@ label{
     margin-top: -15;
     padding: 12px;    
 }
-/* Resolução "HD" */
 
-/* @media (max-width: 1480px) {
-    .logoSociesc{
-        
+@media screen and (max-width:600px) {
+
+    .contagem{
+        display: none;
     }
 
-    #button{
-        font-size: 100%;
-        height: 3%;
-        padding:0%;
+    #fundo{
+        overflow: none;
+    }
+
+    .logoSociesc{
+        margin-top: 10px;
     }
 
     .informacaoLogin{
-        font-size: 100%;
+        position: relative;
+        top: 40px;
+        width: 300px;
+        left: -5px;
+    }
+    
+    center{
+        width: 300px;
+    }
+
+    .borda1{
+        width: 300px;
+    }
+
+    .borda2{
+        width: 300px;
+    }
+
+    #fundo{
+        position: relative;
+        left: 30px;
     }
 
     #login{
-        background-size: 35%;
+        width: 300px;
     }
+
 
     .inputsLogin{
-        width: 20%;
-        height: 3%;
-        font-size: 100%;
+        position: relative;
+        left: -5px;
+        background-repeat: no-repeat;
     }
 
-    .informacaoLogin{
-        font-weight: bold;
-        font-size: relative;
-        font-size: 100%;
-    }
 }
-#fundo2{
-    padding:0 50px 0 0;
-	-moz-transition: all 0.5s ease;
-		-webkit-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-                transition: all 0.5s ease;
-    font-size:1.2em;
-    background:rgb(30, 160, 219);
-        background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219), rgb(7, 6, 6));
-            background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219), rgb(142, 56, 253));
-                background-image: -o-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
-                    background-image: -ms-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
-                        background-image: linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
-                    height:100%;        
-                        overflow:hidden;
-                        width:300px; 
-                        position:fixed;
-                        top:0;
-                        left:-320px;
-                    }
-/* Resolução "Mobile" */
-       
-    @media (max-width: 480px) { 
-            .contagem{
-                width: 100%;
-                font-size: 90%;
-            }  
-        }
-
-/* -------------------------------------------------- */
-/* -------------------------------------------------- */

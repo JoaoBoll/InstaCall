@@ -19,26 +19,28 @@
         </div>
     </header>
     <body id="fundoCinza">
-        <div>
+        <div class="painel">
             <img class="logoSociesc" src="../Imagens/Logo.png" alt="">
             <br>
-            <font class="fonteAtividade">Atividades:</font>
-            <br>
-            <br>
-            <a href="adicionarAtividade.php"><input type="button" class="botao botaoCriarAtividade" value="Adicionar Atividade"></a>
-            <br>
-            <br>
-            <a href="atribuirNota.php"><input type="button" class="botao botaoCriarAtividade" value="Atribuir Nota"></a>
-            <br>
-            <br>
-            <a href="atividadesEncerradas.php"><input type="button" class="botao botaoCriarAtividade" value="Atividade Encerrada"></a>
-            <br>
-            <br>
-            <a href="editarAtividade.php"><input type="button" class="botao botaoCriarAtividade" value="Editar Atividades"></a>
-            <br>
-            <br>
-            <a href="menu.php"><input type="button" class="botao botaoCriarAtividade" value="Voltar"></a>
-            <br>
+            <center>
+                <font class="fonteAtividade">Atividades:</font>
+                <br>
+                <br>
+                <a href="adicionarAtividade.php"><input type="button" class="botao " value="Adicionar Atividade"></a>
+                <br>
+                <br>
+                <a href="atribuirNota.php"><input type="button" class="botao " value="Atribuir Nota"></a>
+                <br>
+                <br>
+                <a href="atividadesEncerradas.php"><input type="button" class="botao " value="Atividade Encerrada"></a>
+                <br>
+                <br>
+                <a href="editarAtividade.php"><input type="button" class="botao " value="Editar Atividades"></a>
+                <br>
+                <br>
+                <a href="menu.php"><input type="button" class="botao " value="Voltar"></a>
+                <br>
+            </center>
             <table style="display: none;" class="tabelaProf">
                 <tr>
                     <td id="direita">ID:</td>
@@ -62,42 +64,7 @@
 
         <div class="borda">
             <table class="tabelaDentro" id="tabelaDeAtividades" style="border: 1px solid black">
-                <!-- <tr>
-                    <td>
-                        <table class='bordaFora1'>
-                            <tr>
-                                <td class="tabelaId">12345</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr> 
-                    <td></td>
-                    <td>
-                        <table class="bordaFora2">
-                            <tr><td class="tabelaDesc">Aqui vai ficar uma descrição grandinha por isso estou a escrever um pouco mais shre apenas para encher linguiça e depois meter banco de dados e n ficar ruim para entender a situação do que ta acontecendo aqui, por que a nave que caiu em jupter é muito loca e pegou o minério e virou fogo pois o petróleo encontrado no sol virou água </td></tr>
-                        </table>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr> 
-                    <td></td>
-                    <td>
-                        <table class='bordaFora4'>
-                            <tr>
-                                <td class="tabelaNome">12345</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td>
-                        <table class="bordaFora3">
-                            <td class="tabelaData">Data de entrega:<br>10/10/2010</td>
-                        </table>
-                    </td>
-                </tr> -->
+               
             </table>
         </div>
     </body>

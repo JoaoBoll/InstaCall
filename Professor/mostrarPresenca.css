@@ -205,3 +205,70 @@ table { border-spacing: 5px; }
     color: red;
     font-weight: bolder;
 }
+
+@media (max-width: 360px) {
+    
+    .logoSociesc{
+        position: absolute;
+    }
+    
+    .fonteAtividade{
+        font-size: 80px;
+        left: 45px;
+    }
+    
+    #data{
+        width: 250px;
+        font-size: 25px;
+        border-radius: 20px;
+        left: 50px;
+    }
+    
+    .botao{
+        width: 250px;
+        height: 40px;
+        font-size: 25px;
+        border: 1px solid black;
+        left: 50px;
+    }
+
+    .borda{
+        position: relative;
+        left: 3px;
+        border-radius: 12px;
+        width: 354px;
+    }
+
+    .tabelaNome{
+        position: absolute;
+        left: 3px;
+        top: 40px;
+        width: 240px;
+    }
+
+    td {
+        height: 75px;
+        width: 300px;
+        background-color: rgb(240, 240, 240);
+    }
+
+    .tabelaTeste{
+        position: absolute;
+        top: 40px;
+        width: 75px;       
+    }
+
+    .matricula{
+        width: 188px;
+    }
+
+    .TabelaPresenca{
+        width: 354px;
+        background-color: rgb(139, 139, 139);
+    }
+
+    #abrirAlunoNota{
+        display: none;
+    }
+
+}

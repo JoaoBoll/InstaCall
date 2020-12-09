@@ -68,14 +68,17 @@ height: 55px;
 }
 /* Resolução "Mobile" */
        
-@media (max-width: 480px) { 
+@media screen and (max-width: 600px) { 
     .instaCall, .instaCall2{
         font-size: 100%;
     } 
     #boxMenu{
-        width: 50%;
+        position: relative;
+        width: 250px;
+        height: 180px;
+        top: 125px;
     }
     .botoesMenu{
-        width: 90%;
+       width: 100%;
     }
 }

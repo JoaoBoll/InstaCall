@@ -195,3 +195,88 @@ td {
 .titulo{
     font-weight: bold;
 }
+
+@media screen and (max-width: 360px){
+    #topoInstaCall{
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+        font-size:1.2em;
+        background:rgb(30, 160, 219);
+        background-image: -moz-linear-gradient(135deg, rgb(30, 160, 219), rgb(255, 255, 255));
+            background-image: -webkit-linear-gradient(135deg, rgb(30, 160, 219), rgb(142, 56, 253));
+                background-image: -o-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+                    background-image: -ms-linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+                        background-image: linear-gradient(135deg,  rgb(30, 160, 219), rgb(142, 56, 253));
+        width: 900px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 55px;
+    }
+
+    .fonteAtividade{
+        font-size: 70px;
+        left: 75px;
+    }
+    
+    .botao{
+        width: 250px;
+        height: 40px;
+        font-size: 25px;
+        border: 1px solid black;
+        left: 50px;
+    }
+
+    .logoSociesc{
+        position: fixed;
+        width: 200px;
+    }
+
+    .borda{
+        position: relative;
+        width:350px;
+        left: 3px;
+    }
+
+    .tabelaProf{
+        width: 225px;
+        position: absolute;
+        top: 3px;
+    }
+
+    .tabelaDesc {
+        word-break: break-all;
+        position: absolute;
+        top: 45px;
+        left: -107px;
+    }
+
+    .tabelaNome{
+        float: left;
+        position: relative;
+        top: 73px;
+        left: 3px;
+        width: 200px;
+    }
+
+    .tabelaData{
+        position: absolute;
+        top: 73px;
+        right: 4px;
+        height: 30px;
+    }
+
+    .tabelaId{
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+
+    td{
+        position: relative;
+        height: auto;
+    }
+}

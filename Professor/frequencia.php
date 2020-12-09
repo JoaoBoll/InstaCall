@@ -18,7 +18,7 @@
         </div>
     </header>
     <body id="fundoCinza">
-        <div>
+        <div class="tudoDentro">
             <img class="logoSociesc" src="../Imagens/Logo.png" alt="">
             <br>
             <font class="fonteAtividade">Frequência:</font>

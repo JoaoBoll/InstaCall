@@ -5,6 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../Admin/JS/mask.js"></script>
     <script src="../Admin/JS/Atividade/buscaProfTurma.js"></script>
     <script src="../Admin/JS/tabela.js"></script>
