@@ -19,32 +19,34 @@
         </div>
     </header>
     <body id="fundoCinza">
-        <div>
+        <div class="painel">
             <img class="logoSociesc" src="../Imagens/Logo.png" alt="">
             <br>
-            <font class="fonteAtividade">Notas:</font>
-            <br>
-            <br>
-            <a href="atividades.php"><input type="button" class="botao botaoCriarAtividade" value="Voltar"></a>
-            <br>
-            <table style="display:none;" class="tabelaAluno">
-                <tr>
-                    <td id="direita">ID:</td>
-                    <td><input type="text" disabled  id="idAluno" class="idProf"></td>
-                </tr>
-                <tr>
-                    <td id="direita" >Aluno: </td>
-                    <td><input type="text" disabled id="nomeAluno" class="nomeProf"></td>
-                </tr>
-                <tr>
-                    <td id="direita" >Turma: </td>
-                    <td><input type="text" disabled id="turma" class="turma"></td>
-                </tr>
-                <tr>
-                    <td id="direita">Curso: </td>
-                    <td><input type="text" disabled id="nomeCurso" class="nomeCurso"></td>
-                </tr>
-            </table>
+            <center>
+                <font class="fonteAtividade">Notas:</font>
+                <br>
+                <br>
+                <a href="atividades.php"><input type="button" class="botao botaoCriarAtividade" value="Voltar"></a>
+                <br>
+                <table style="display:none;" class="tabelaAluno">
+                    <tr>
+                        <td id="direita">ID:</td>
+                        <td><input type="text" disabled  id="idAluno" class="idProf"></td>
+                    </tr>
+                    <tr>
+                        <td id="direita" >Aluno: </td>
+                        <td><input type="text" disabled id="nomeAluno" class="nomeProf"></td>
+                    </tr>
+                    <tr>
+                        <td id="direita" >Turma: </td>
+                        <td><input type="text" disabled id="turma" class="turma"></td>
+                    </tr>
+                    <tr>
+                        <td id="direita">Curso: </td>
+                        <td><input type="text" disabled id="nomeCurso" class="nomeCurso"></td>
+                    </tr>
+                </table>
+            </center> 
         </div>
 <!--  -->
 

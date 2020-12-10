@@ -35,6 +35,16 @@ height: 55px;
     font-family: 'Cookie', cursive;
 }
 
+.logoSociesc{
+    width: 160px;
+    margin-top: 10px;
+}
+
+.painel{
+    width: 300px;
+    float: left;
+}
+
 #fundoCinza{
     background-color: rgb(240, 240, 240);
     
@@ -43,19 +53,19 @@ height: 55px;
 .fonteAtividade{
     font-size: 45px;
     font-family: 'Cookie', cursive;
-    position: relative;
-
+    text-align: center;
+    width: 100%;
 }
 
 .botao{
-
-    width: 177;
+    margin: 10px;
+    width: 170px;
     border-radius: 12px;
     border: 1px solid lightgrey;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     font-size: 17px;
-    position: relative;
+    font-weight: 100px;
 }
 
 .botao:hover{
@@ -77,73 +87,66 @@ height: 55px;
     text-align: right;
 }
 
-.centralizarTudo{
+.tabela{
     position: relative;
-    top: 50px;
-    left: 30px;
 }
 
-#direita{
-    text-align: right;
-    font-size: 16px;
+.tabela>div{
+    float: left;
+    margin: 5px;
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 0 10;
+}
+
+#data{
+    margin: 5px;
+    font-size: auto;
+    width: 177px;
+    height: 24px;
+    border-radius: 12px;
 }
 
 .borda{
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 12px;
     height: 590px;
-    width: 330px;
-    left: 315px;
-    top: 60px;
-    position: fixed;
-    overflow: scroll;
+    width: 1000px;
+    margin-top: 10px;
+    float: left;
 }
 
 .tabelaDentro{
     width: 100%;
     border-radius: 10px;
-
-
-}
-
-.tabelaId{
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    width: 100px;
-    font-size: 25px;
-    border-radius: 10px;
-    background-color: rgb(240, 240, 240);
-}
-
-.tabelaData{
-    border-style: solid;
-    border-right: none;
-    border-bottom: none;
-    border-radius: 10px;
-    width: 200px;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgb(240, 240, 240);
 }
 
 .tabelaNome{
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    width: 250px;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: rgb(240, 240, 240);
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    width: 300px;
+  
 }
 
-.tabelaProf{
-    position: relative;
-    top: 60px;
-    left: 30px;
+.tabelaDesc{
+    padding: 3px;
+    width: 30%;
+    word-break: break-all;
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid black;
 }
 
-#direita{
-    text-align: right;
+.tabelaData{
+    float: right !important;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+}
+
+.titulo{
+    font-weight: bold;
 }
 
 .tabelaDentro tr:hover{
@@ -160,69 +163,34 @@ height: 55px;
                         background-image: linear-gradient(135deg, rgb(30, 160, 219, 0.5), rgb(142, 56, 253, 0.5));
 }
 
+td {
+    border: 1px black solid;
+    border-radius: 12px;
+}
+
 .tabelaDentro td{
     border-radius: 12px;
     border: 1px solid black;
-}
-
-.tabelaProf{
-    background-color: white;
-    position: absolute;
-    border-radius: 12px;
-    left: 110px;
-    top: 1%;
-    border: 1px solid black;
-    text-align: center;
-    width: 300px;
-}
-
-.tabelaNome{
-    
-    border: 1px solid black;
-    border-radius: 12px;
-    position: relative;
-    background-color: white;
-    top: 100%;
-    text-align: center;
-    margin-top: 35px;
-    width: 295px;
-    font-size: 17px;
-    padding: 3px;
-
-}
-
-.tabelaDesc{
-    padding: 3px;
-    position: absolute;
-    border-radius: 12px;
-    width: 174px;
-    margin-left: 120px;
-    background-color: white;
-    border: 1px solid black;
-    height:20px;
-    text-align: center;
-    padding: 3px;
-    font-size: 17px;
-}
-
-.tabelaData{
-    font-size: 17px;
-    padding: 3px;
-    border: 1px solid black;
-    border-radius: 12px;
-    position: absolute;
-    background-color: white;
-    text-align: center;
-    padding: 3px;
-    width: 100px;
-    height:20px;
 }
 
 .titulo{
     font-weight: bold;
 }
 
+.fechado{
+    color: red;
+}
+
+.aberto{
+    color: green;
+}
+
 @media screen and (max-width:360px) {
+
+    .painel{
+        width: 100%;
+    }
+
     #topoInstaCall{
         -moz-transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
@@ -245,86 +213,54 @@ height: 55px;
 
     .fonteAtividade{
         font-size: 70px;
+        left: 75px;
+    }
+
+    #data{
+        width: 280px;
+        height: 40px;
+        font-size: 25px;
+        border-radius: 20px;
         left: 50px;
     }
     
-    #data{
-        position: relative;
-        width: 250px;
-        font-size: 25px;
-        border-radius: 20px;
-        left: 25px;
-    }
     .botao{
-        width: 300px;
+        width: 280px;
         height: 40px;
         font-size: 25px;
         border: 1px solid black;
-        position: relative;
-        left: -280px;
-        margin-top: 10px;
+        left: 50px;
     }
 
     .logoSociesc{
-        position: fixed;
         width: 200px;
     }
 
     .borda{
-        position: relative;
-        border-radius: 12px;
-        width: 354px;
-        left: 3px;
-        height: auto;
-        overflow: auto;
+        height: 100%;
+        width:350px;
+        padding: 3px;
     }
 
-    #data{
-        width: 302px;
+    .labelData{
+        display:none
     }
 
-    .tabelaProfChamada{
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
+    #data {
 
-    .centralizarTudo{
-        left: 0px;
     }
 
     .tabelaData{
-        top: 3px;
-        text-align: center;
-        font-size: 25px;
-        width: 150px;
-        position: absolute;
-        height: auto;
+        top: 0px;
+        right: 0px;
     }
 
     .tabelaNome{
-        width: 330px;
-        font-size: 25px;
-        position: relative;
-        top:13px;
-        height: auto;
+        width: 312px;
     }
 
     .tabelaDesc{
-        top:3px;
-        font-size: 25px;
-        width: 160px;
-        left: 50px;
-        position: absolute;
-        height: auto;
-    }
-    
-    #tabelaDeChamada td{
-        height: 100px;
-        left: 3px;
+        width: 170px;
     }
 
-    #direita{
-        display: none;
-    }
 }

@@ -67,16 +67,13 @@ function retornaLinhaTabela(_id, _desc,_nomeProf, _curso, _data){
         \
         <div class="tabelaId"><p class="titulo">ID:</p>${_id}</div>\
         \
-        <div class="tabelaProf"><p class="titulo">Professor: </p>${_nomeProf}</div>\
+        <div class="tabelaProf"><p class="titulo">Professor:</p>${_nomeProf}</div>\
         \
         <div class="tabelaNome"><p class="titulo">Curso:</p>${_curso}</div>\
+        \
         <div class="tabelaData ${emAtraso?"emAtraso":"emDia"}"><p class="titulo">Data Limite:</p>${_data}</div>\
         \
         <div class="tabelaDesc"><p class="titulo">Descrição: </p>${_desc}</div>\
-        \
-
-        \
-        
         \
     </div>`;
 

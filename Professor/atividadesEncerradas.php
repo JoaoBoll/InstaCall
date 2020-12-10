@@ -20,14 +20,16 @@
         </div>
     </header>
     <body id="fundoCinza">
-        <div>
-            <img class="logoSociesc" src="../Imagens/Logo.png" alt="">
-            <br>
-            <font class="fonteAtividade">Atividades:</font>
-            <br>
-            <br>
-            <a href="atividades.php"><input type="button" class="botao botaoCriarAtividade" value="Voltar"></a>
-            <br>
+        <div class="painel">
+           <img class="logoSociesc" src="../Imagens/Logo.png" alt="">
+            <center>
+                <br>
+                <font class="fonteAtividade">Atividades:</font>
+                <br>
+                <br>
+                <a href="atividades.php"><input type="button" class="botao botaoCriarAtividade" value="Voltar"></a>
+                <br>
+            </center>
             <table style="display: none"  class="tabelaProf">
                 <tr>
                     <td id="direita">ID:</td>

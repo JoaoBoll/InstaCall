@@ -51,7 +51,25 @@ function retornaLinhaTabela(_dia,_teste, _curso){
     if (_teste == 0) {
         _teste = 'Encerrado';
     }
-    var html = `<div class="tabelaData">${_dia}</div><div class="tabelaDesc">${_teste}</div> <div class="tabelaNome">${_curso}</div>`;
+
+    var teste;
+
+    if (_teste == 'Encerrado'){
+        teste = false;
+    } else {
+        teste = true;
+    }
+
+    var html = `\
+    <div class="tabela">\
+        \
+        <div class="tabelaData">${_dia}</div>\
+        \
+        <div class="tabelaDesc">Situação: <span class="${teste?"aberto":"fechado"}">${_teste}</span></div>\
+        \
+        <div class="tabelaNome">${_curso}</div>\
+        \
+    </div>`;
 
     return html;
 

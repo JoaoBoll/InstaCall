@@ -48,7 +48,19 @@ function listarNota(){
 
 function retornaLinhaTabela(_id,_nomeProf, _nome, _desc, _nota){
 
-    var html = `<div class="tabelaId"><p>ID:</p>${_id}</div><div class="tabelaProf"><p>Professor:</p>${_nomeProf}</div><div class="tabelaDesc"><p>Descrição</p>${_desc}</div> <div class="tabelaNome"><p>NomeAtividade</p>${_nome}</div> <div class="tabelaData"><p>Nota:</p>${_nota}</p></div>`;
+    var html = `\
+    <div class="tabela">\
+        <div class="tabelaId"><p>ID:</p>${_id}</div>\
+        \
+        <div class="tabelaProf"><p>Professor:</p>${_nomeProf}</div>\
+        \
+        <div class="tabelaNome"><p>Curso</p>${_nome}</div>\
+        \
+        <div class="tabelaDesc"><p>Descrição</p>${_desc}</div>\
+        \
+        <div class="tabelaData"><p>Nota:</p>${_nota}</p></div>\
+        \
+    </div>`;
 
     return html;
 
@@ -59,6 +71,6 @@ function criarLinhaInst(dados){
     var row = table.insertRow(-1);
     var cell1 = row.insertCell(0);
     
-    cell1.innerHTML = retornaLinhaTabela(dados.idAtividade, dados.nomeProf,dados.nomeAtividade, dados.descricaoAtividade, dados.nota);
+    cell1.innerHTML = retornaLinhaTabela(dados.idAtividade, dados.nomeProf,dados.nomeCurso, dados.descricaoAtividade, dados.nota);
     
   }

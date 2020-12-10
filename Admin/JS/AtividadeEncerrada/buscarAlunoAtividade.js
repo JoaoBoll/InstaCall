@@ -54,7 +54,19 @@ function retornaLinhaTabela(_id, _desc,_nomeProf, _curso, _data){
     
     var emAtraso = diaAtual - dataLimite > 0;
 
-    var html = `<div class="tabelaId"><p class="titulo">ID: </p>${_id}</div><div class="tabelaProf"><p class="titulo">Professor: </p>${_nomeProf}</div><div class="tabelaDesc"><p class="titulo">Descrição: </p>${_desc}</div> <div class="tabelaNome"><p class="titulo">Curso:</p>${_curso}</div> <div class="tabelaData "><p class="titulo">Data Limite:</p>${_data}</div>`;
+    var html = `
+    <div class="tabela">\
+        \
+        <div class="tabelaId"><p class="titulo">ID: </p>${_id}</div>\
+        \
+        <div class="tabelaProf"><p class="titulo">Professor: </p>${_nomeProf}</div>\
+        \
+        <div class="tabelaDesc"><p class="titulo">Descrição: </p>${_desc}</div>\
+        \
+        <div class="tabelaNome"><p class="titulo">Curso:</p>${_curso}</div>\
+        \
+        <div class="tabelaData "><p class="titulo">Data Limite:</p>${_data}</div>\
+    </div>`;
 
     return html;
 

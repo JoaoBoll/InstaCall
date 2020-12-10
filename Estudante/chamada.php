@@ -19,79 +19,36 @@
         </div>
     </header>
     <body id="fundoCinza">
-        <div class="centralizarTudo">
+        <div class="painel">
+            <img class="logoSociesc" src="../Imagens/Logo.png" alt="">
+            <br>
+            <center>
             <font class="fonteAtividade">Chamadas:</font>
-            <table style="display: none">
-                <tr>
-                    <td id="direita">Matrícula:</td>
-                    <td><input type="text" disabled id="idAluno"></td>
-                <tr>
-                    <td id="direita">Aluno:</td>
-                    <td><input type="text" id="nomeAluno" disabled></td>
-                </tr>
-                <tr>
-                    <td id="direita">Turma</td>
-                    <td><input type="text" id="Turma" disabled></td>
-                </tr>
-                <tr>
-                    <td id="direita">Curso:</td>
-                    <td><input type="text" id="nomeCurso" disabled></td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td id="direita">Data: </td>
-                    <td><input type="text" id="data" placeholder="Ex: 02/02/2002"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="button" class="botao" onclick="confirmarPresenca()" value="Confirmar Presença"></td>
-                </tr>
-                <tr>
-                <td></td>
-                <td><a href="menu.php"><input type="button" class="botao" value="Voltar"></a></td>
-            </tr>
-            </table>
-            <div class="borda">
-                <table class="tabelaDentro" id="tabelaDeChamada" style="border: 1px solid black">
-                    <!-- <tr>
-                        <td>
-                            <table class='bordaFora1'>
-                                <tr>
-                                    <td class="tabelaId">12345</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                        </td>
-                        <td></td>
+                <table style="display: none">
+                    <tr>
+                        <td id="direita">Matrícula:</td>
+                        <td><input type="text" disabled id="idAluno"></td>
+                    <tr>
+                        <td id="direita">Aluno:</td>
+                        <td><input type="text" id="nomeAluno" disabled></td>
                     </tr>
-                    <tr> 
-                        <td></td>
-                        <td>
-                            <table class="bordaFora2">
-                                <tr><td class="tabelaDesc">Aqui vai ficar uma descrição grandinha por isso estou a escrever um pouco mais shre apenas para encher linguiça e depois meter banco de dados e n ficar ruim para entender a situação do que ta acontecendo aqui, por que a nave que caiu em jupter é muito loca e pegou o minério e virou fogo pois o petróleo encontrado no sol virou água </td></tr>
-                            </table>
-                        </td>
-                        <td></td>
+                    <tr>
+                        <td id="direita">Turma</td>
+                        <td><input type="text" id="Turma" disabled></td>
                     </tr>
-                    <tr> 
-                        <td></td>
-                        <td>
-                            <table class='bordaFora4'>
-                                <tr>
-                                    <td class="tabelaNome">12345</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table class="bordaFora3">
-                                <td class="tabelaData">Data de entrega:<br>10/10/2010</td>
-                            </table>
-                        </td>
-                    </tr> -->
+                    <tr>
+                        <td id="direita">Curso:</td>
+                        <td><input type="text" id="nomeCurso" disabled></td>
+                    </tr>
                 </table>
-            </div>
+                <input type="text" id="data" placeholder="Ex: 02/02/2002">
+                <input type="button" class="botao" onclick="confirmarPresenca()" value="Confirmar Presença">
+                <a href="menu.php"><input type="button" class="botao" value="Voltar"></a>
+            </center>
+        </div>
+        <div class="borda">
+            <table class="tabelaDentro" id="tabelaDeChamada" style="border: 1px solid black">
+            </table>
         </div>
     </body>
 </html>

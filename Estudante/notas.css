@@ -35,34 +35,44 @@ height: 55px;
     font-family: 'Cookie', cursive;
 }
 
+.painel{
+    width: 300px;
+    float: left;
+}
+
+.borda{
+    border: 2px solid black;
+    border-radius: 12px;
+    height: 585px;
+    width: 1000px;
+    margin-top: 10px;
+    float: left;
+}
+
 #fundoCinza{
     background-color: rgb(240, 240, 240);
     
 }
+
 .logoSociesc{
     width: 160px;
     margin-top: 10px;
-    position: fixed;
 }
 
 .fonteAtividade{
     font-size: 45px;
-    top: 30px;
     font-family: 'Cookie', cursive;
-    position: relative;
-    left: 120px;
+    text-align: center;
+    width: 100%;
 }
 
 .botao{
-    top: 40px;
-    width: 180px;
+    width: 170px;
     border-radius: 12px;
     border: 1px solid lightgrey;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     font-size: 17px;
-    position: relative;
-    left: 110px;
     font-weight: 100px;
 }
 
@@ -82,23 +92,9 @@ height: 55px;
     
 }
 
-.borda{
-    border: 1px solid black;
-    height: 590px;
-    width: 1000px;
-    left: 315px;
-    top: 60px;
-    position: fixed;
-    overflow: scroll;
-}
-
-.tabela{
-    margin-top: 30px;
-}
-
 .tabelaDentro{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 td {
@@ -107,6 +103,7 @@ td {
 }
 
 .tabelaDentro tr:hover{
+    border-radius: 12px;
     color: rgb(0, 0, 0);
     -moz-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -123,10 +120,6 @@ td {
 #direita{
     text-align: right;
 }
-p{
-    font-weight: bolder;
-}
-
 .emDia p{
     font-weight: bolder;
     color: green;
@@ -137,70 +130,63 @@ p{
     color: red;
 }
 
+.tabela{
+    position: relative;
+}
+
+.tabela>div{
+    float: left;
+    margin: 5px;
+    border-radius: 12px;
+}
+
 .tabelaProf{
     background-color: white;
-    position: absolute;
-    border-radius: 12px;
-    left: 110px;
-    top: 1%;
     border: 1px solid black;
     text-align: center;
     width: 300px;
 }
 
 .tabelaNome{
-    float: left;
     border: 1px solid black;
-    border-radius: 12px;
-    position: relative;
     background-color: white;
-    top: 100%;
     text-align: center;
-    margin-top: 20px;
     width: 300px;
-    left: 110px;
 }
 
 .tabelaDesc{
     padding: 3px;
     word-break: break-all;
-    width: 850px;
-    position: relative;
-    border-radius: 12px;
-    top: 10px;
-    margin-left: 110px;
+    width: calc(100% - 17px);
+    margin-right: 10px;
     background-color: white;
     border: 1px solid black;
 }
 
 .tabelaData{
-    float: right;
+    float: right !important;
     border: 1px solid black;
-    border-radius: 12px;
-    position: relative;
     background-color: white;
-    top: 100%;
     text-align: center;
-    margin-top: 20px;
-    padding: 5px;
-    font-weight: bolder;
+    padding: 0 10px;
 }
 
 .tabelaId{
-    position: relative;
     width: 100px;
-    border-radius: 12px;
     background-color: rgb(255, 255, 255);
-    top: 1%;
     border: 1px solid black;
     text-align: center;
 }
-
 .titulo{
     font-weight: bold;
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width: 600px){
+   
+    .painel{
+        width: 100%;
+    }
+
     #topoInstaCall{
         -moz-transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
@@ -223,86 +209,39 @@ p{
 
     .fonteAtividade{
         font-size: 70px;
-        left: 50px;
+        left: 75px;
     }
     
     .botao{
-        width: 300px;
+        width: 250px;
         height: 40px;
-        font-size: 25px;
+        font-size: 20px;
         border: 1px solid black;
-        position: relative;
-        left: 25px;
-        margin-top: 10px;
+        left: 50px;
     }
 
     .logoSociesc{
-        position: fixed;
         width: 200px;
     }
 
     .borda{
-        position: relative;
-        border-radius: 12px;
-        width: 354px;
-        left: 3px;
         height: auto;
-        overflow: auto;
-    }
-
-    td {
-        height: 100px;
-        background-color: rgb(240, 240, 240);
+        width:350px;
+        padding: 3px;
     }
 
     .tabelaData{
-        width: 150px;
-        font-size: 16px;
         position: absolute;
-        position: absolute;
-        top: 35px;
-        right: 7px;
-        height: 35px;
-        padding: 0px;
-    }
-
-    .tabelaId{
-        position: absolute;
-        margin-top: 5px;
-        margin-left: 3px;
-    }
-
-    .tabelanome{
-        width: 150px;
-        font-size: 16px;
-        position: absolute;
-        top: 35px;
-        left: 7px;
-        height: 35px;
+        top: 0px;
+        right: 0px;
     }
 
     .tabelaProf{
-        position: absolute;
-        margin-top: 5px;
-        left: 120px;
-        width: 150px;
+        width: calc(100% - 15px);
     }
 
-    /* .tabelaDesc{
-        top:3px;
-        font-size: 25px;
-        width: 160px;
-        left: 50px;
-        position: absolute;
-        height: auto;
-    }
-     */
-    #tabelaDeChamada td{
-        height: 100px;
-        left: 3px;
+    .tabelaNome{
+        width: calc(100% - 17px);
     }
 
-    #direita{
-        display: none;
-    }
 }

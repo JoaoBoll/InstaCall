@@ -23,23 +23,25 @@
             <img class="logoSociesc" src="../Imagens/Logo.png" alt="">
             <br>
             <center>
-                <font class="fonteAtividade">Atividades:</font>
-                <br>
-                <br>
-                <a href="adicionarAtividade.php"><input type="button" class="botao " value="Adicionar Atividade"></a>
-                <br>
-                <br>
-                <a href="atribuirNota.php"><input type="button" class="botao " value="Atribuir Nota"></a>
-                <br>
-                <br>
-                <a href="atividadesEncerradas.php"><input type="button" class="botao " value="Atividade Encerrada"></a>
-                <br>
-                <br>
-                <a href="editarAtividade.php"><input type="button" class="botao " value="Editar Atividades"></a>
-                <br>
-                <br>
-                <a href="menu.php"><input type="button" class="botao " value="Voltar"></a>
-                <br>
+                <div>
+                    <font class="fonteAtividade">Atividades:</font>
+                    <br>
+                    <br>
+                    <a href="adicionarAtividade.php"><input type="button" class="botao " value="Adicionar Atividade"></a>
+                    <br>
+                    <br>
+                    <a href="atribuirNota.php"><input type="button" class="botao " value="Atribuir Nota"></a>
+                    <br>
+                    <br>
+                    <a href="atividadesEncerradas.php"><input type="button" class="botao " value="Atividade Encerrada"></a>
+                    <br>
+                    <br>
+                    <a href="editarAtividade.php"><input type="button" class="botao " value="Editar Atividades"></a>
+                    <br>
+                    <br>
+                    <a href="menu.php"><input type="button" class="botao " value="Voltar"></a>
+                    <br>
+                </div>
             </center>
             <table style="display: none;" class="tabelaProf">
                 <tr>
