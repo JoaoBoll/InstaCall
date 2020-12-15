@@ -20,7 +20,7 @@
    </head>
     <body id="fundo">
         <h1><font class="instaCall">Insta</font><font class="instaCall2">Call&copy;</font></h1>     
-        <div class="contagem">
+        <div style="display: none;" class="contagem">
             <span>Logins Aluno: <?php require 'QuantidadeAcesso/dao/getacesso.php'; echo getAcessosAluno(); ?></span><label for=""></label>
             <br>
             <span>Logins Professor: <?php echo getAcessosProfessor(); ?></span><label for=""></label>
@@ -31,21 +31,21 @@
                     <center><div><img class="logoSociesc" src="Imagens/logo.png"></div>
                     <div class="informacaoLogin">
                         <br>
-                        Horários | Chamadas
                         <br>
-                        Frequência | Notas
+                        Chamadas | Frequência
                         <br>
-                        Atividades | Material Complementar
+                        Atividades | Notas
+                        <br>
                     </div>    
                     <br>
                     <br>
                     <br>
                     <div class="inputs">
                         <form method="POST"></form>
-                            <label for="">Login:  </label><input id="loginMenu" class="inputsLogin" placeholder="Login">
+                            <label for="">Login:  </label><input id="loginMenu" class="inputsLogin" placeholder=" Login">
                             <br>
                             <br>
-                            <label for="">Senha: </label><input id="senhaMenu" class="inputsLogin" type="password" placeholder="Senha">
+                            <label for="">Senha: </label><input id="senhaMenu" class="inputsLogin" type="password" placeholder=" Senha">
                             <br>
                             <br>
                             <input type="button" onclick="loginADM()" id="button" value="Entrar">

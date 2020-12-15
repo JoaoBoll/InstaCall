@@ -14,6 +14,9 @@
         <div>
             <h1><font class="instaCall">Insta</font><font class="instaCall2">Call&copy;</font></h1>
         </div>
+        <br>
+        <br>
+        <br>
         <div class="centralizarTudo">
             <div id="boxMenu">
                 <a href="atividades.php"><input style="margin-top: 0px;" type="button" value="Atividade" class="botoesMenu"></a></td>
