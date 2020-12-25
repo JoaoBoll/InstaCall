@@ -18,13 +18,11 @@
        <title>InstaCall - Unisociesc</title>
 
    </head>
+   <header>
+   <h1><font class="instaCall">Insta</font><font class="instaCall2">Call&copy;</font></h1>     
+    </header>
     <body id="fundo">
-        <h1><font class="instaCall">Insta</font><font class="instaCall2">Call&copy;</font></h1>     
-        <div style="display: none;" class="contagem">
-            <span>Logins Aluno: <?php require 'QuantidadeAcesso/dao/getacesso.php'; echo getAcessosAluno(); ?></span><label for=""></label>
-            <br>
-            <span>Logins Professor: <?php echo getAcessosProfessor(); ?></span><label for=""></label>
-        </div>
+       
         <div id="login" class="fora">
             <div class="borda1">
                 <div class="borda2">
@@ -50,8 +48,6 @@
                             <br>
                             <input type="button" onclick="loginADM()" id="button" value="Entrar">
                     </div></center>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

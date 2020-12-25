@@ -36,6 +36,7 @@ function listarAtividades(idTurma){
         data: {idTurma: idTurma},
     
         success: function (result, textstatus) {
+            console.log(result)
             let dados = JSON.parse(result);
             console.log(dados);
             dados.forEach(d => criarLinhaAtividade(d));
@@ -67,18 +68,17 @@ function retornaLinhaTabela(_id, _desc,_nomeProf, _curso, _data){
     var html = `\
     <div class="tabela">\
         \
-        <div class="tabelaId"><p class="titulo">ID: </p>${_id}</div>\
+        <div class="tabelaId"><p class="titulo">ID:</p>${_id}</div>\
         \
-        <div class="tabelaProf"><p class="titulo">Professor: </p>${_nomeProf}</div>\
-        \
-        <div class="tabelaDesc"><p class="titulo">Descrição: </p>${_desc}</div>\
+        <div class="tabelaProf"><p class="titulo">Professor:</p>${_nomeProf}</div>\
         \
         <div class="tabelaNome"><p class="titulo">Curso:</p>${_curso}</div>\
         \
         <div class="tabelaData ${emAtraso?"emAtraso":"emDia"}"><p class="titulo">Data Limite:</p>${_data}</div>\
         \
-    </div>`
-    ;
+        <div class="tabelaDesc"><p class="titulo">Descrição: </p>${_desc}</div>\
+        \
+    </div>`;
 
     return html;
 
